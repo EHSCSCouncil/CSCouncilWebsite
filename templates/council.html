@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}
+<title>CS Council</title>
+{% endblock %}
+    
+{% block main %}
+<div class="slideshow">
+    <!-- Slide 1 -->
+    <div class="slide active" style="background-image: url('/static/images/slideshow_1.jpg');">
+        <div class="slide-content">
+            <h1>Welcome to the CS Outreach Council</h1>
+            <p>Find details about different activities we host from this website.</p>
+            <p>**More info to be added**</p>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <a href = "/codefest">
+    <div class="slide" style="background-image: url('/static/images/slideshow_2.png'); background-position: center top -350px; background-size: cover;">
+        <div class="slide-content">
+            <h1>Spooktastic Codefest</h1>
+            <p>Join us for an exciting event on October 29</p>
+            <p>**More info to be added**</p>
+        </div>
+    </div>
+</a>
+</div>
+    <script>
+        // Set your initial slide index if needed
+        let slideIndex = 0;
+    
+        // Function to show slides
+        function showSlides() {
+            let i;
+            let slides = document.querySelectorAll(".slide"); // Select all elements with class "slide"
+    
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.opacity = "0"; // Hide all slides
+            }
+    
+            slideIndex++;
+    
+            if (slideIndex >= slides.length) {
+                slideIndex = 0; // Reset slide index when it exceeds or equals the number of slides
+            }
+    
+            slides[slideIndex].style.opacity = "1"; // Show the current slide
+    
+            setTimeout(showSlides, 4000); // Change image every 2 seconds (adjust as needed)
+        }
+    
+        // Start the slideshow when the page loads
+        window.addEventListener("load", () => {
+            showSlides();
+        });
+    </script>
+{% endblock %}
+    
+          
+    
+

@@ -1,0 +1,261 @@
+
+/* Add your CSS styles here to customize the appearance */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.content {
+    background-color:   #eeece4;
+}
+
+.toolbar {
+    background-color: rgba(241, 231, 152, 0.331);
+    color: rgb(230, 226, 218);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 80px; /* Adjust the width as needed */
+    height: auto;
+}
+
+.button {
+    padding: 1em;
+    background-color: rgb(23, 24, 24);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1em;
+    margin: 0 2em;
+    font-family: 'Copperplate', 'Papyrus', fantasy; /* Specify your preferred fantasy font */
+    font-size: 1.375em;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+}
+.button2{
+    padding: 15px 20px;
+    background-color: rgb(77, 161, 239);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-family: 'Copperplate', 'Papyrus', fantasy; /* Specify your preferred fantasy font */
+    font-size: 1.375em;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(65, 133, 234, 0.919);
+    color: #14180d;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(23, 24, 24); /* Use the same background color as the buttons */
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 20px; /* Adjusted padding to match the button padding */
+    text-decoration: none;
+    display: block;
+    font-family: 'Copperplate', 'Papyrus', fantasy; /* Use the same fantasy font as the buttons */
+    font-size: 1.375em;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(237, 240, 232, 0.919); /* Use the same hover background color as the buttons */
+    color: #0e1503; /* Use the same hover text color as the buttons */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 60px); /* Adjust the height for the toolbar */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0; /* Start with all slides hidden */
+    transition: opacity 1s ease-in-out; /* Smooth fade transition */
+}
+
+.slide.active {
+    opacity: 1; /* Show active slide */
+}
+
+.slide-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjusted opacity and color for the faded box */
+    padding: 20px;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+body, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-family: 'Copperplate', 'Papyrus', fantasy;
+    color:#030011
+}
+
+h1{
+    font-family: 'Copperplate', 'Papyrus', fantasy;
+}
+.toolbar {
+            background-color: rgba(241, 231, 152, 0.331);
+            color: rgb(230, 226, 218);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .logo {
+            display: inline-block;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo img {
+            width: 100px; /* Adjust the width as needed */
+            height: auto;
+        }
+        
+        .button {
+            padding: 30px 20px;
+            background-color: rgb(23, 24, 24);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            font-family: 'Copperplate', 'Papyrus', fantasy; /* Specify your preferred fantasy font */
+            font-size: 1.375em;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: rgba(65, 133, 234, 0.919);
+            color: #14180d;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(23, 24, 24); /* Use the same background color as the buttons */
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 20px; /* Adjusted padding to match the button padding */
+            text-decoration: none;
+            display: block;
+            font-family: 'Copperplate', 'Papyrus', fantasy; /* Use the same fantasy font as the buttons */
+            font-size: 1.375em;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgba(237, 240, 232, 0.919); /* Use the same hover background color as the buttons */
+            color: #0e1503; /* Use the same hover text color as the buttons */
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+header {
+    color: rgb(7, 7, 7);
+    text-align: center;
+    padding: 0.1px;
+}
+
+nav {
+    background-color: rgb(5, 21, 52);
+}
+.but1{
+    padding: 5px 5px;
+    background-color: rgb(242, 242, 240);
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-family: 'Copperplate', 'Papyrus', fantasy; /* Specify your preferred fantasy font */
+    font-size: 1.375em;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+}
+/*
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    font-family: 'Copperplate', 'Papyrus', fantasy;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+*/
+section {
+    padding: 1.5em;
+    background-color: #eff1e3d5;
+    margin: 1.5em;
+    border-radius: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
